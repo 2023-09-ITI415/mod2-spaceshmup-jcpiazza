@@ -143,6 +143,17 @@ public class Weapon : MonoBehaviour {
                 p = MakeProjectile();
                 p.rigid.velocity = vel;
                 break;
+
+            case WeaponType.phaser:
+                p = MakeProjectile();
+                p.rigid.velocity = vel;
+                break;
+
+            case WeaponType.missile:
+                p = MakeProjectile();
+                p.rigid.velocity = vel;
+                break;
+
         }
     }
 
