@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 857311604692950039}
   - component: {fileID: 6427795548595964206}
   - component: {fileID: 9179704958812687705}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ffc8a92af8dab40e2a35b76c369d2b7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 1331606541632842857}
   - component: {fileID: 978735405387493444}
   - component: {fileID: 2526202363987546182}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ffc8a92af8dab40e2a35b76c369d2b7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -221,9 +221,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8078599354641780459}
-  m_Layer: 0
+  - component: {fileID: 6559419469503930091}
+  - component: {fileID: 6037396422682481856}
+  - component: {fileID: -3095445230450688534}
+  m_Layer: 9
   m_Name: Enemy_5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,6 +250,80 @@ Transform:
   - {fileID: 8990262187392421624}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6559419469503930091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2266179975775239139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac691aa6a0aaefe4aa8af67a198682ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 5
+  keepOnScreen: 1
+  isOnScreen: 1
+  camWidth: 0
+  camHeight: 0
+  offRight: 0
+  offLeft: 0
+  offUp: 0
+  offDown: 0
+--- !u!54 &6037396422682481856
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2266179975775239139}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &-3095445230450688534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2266179975775239139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c4f74f669cb4db29ae79003faf40da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  fireRate: 0.3
+  health: 100
+  score: 100
+  showDamageDuration: 0.1
+  powerUpDropChance: 1
+  originalColors: []
+  materials: []
+  showingDamage: 0
+  damageDoneTime: 0
+  notifiedOfDestruction: 0
+  lifeTime: 5
+  points: []
+  birthTime: 0
 --- !u!1 &3360888524793654303
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +336,7 @@ GameObject:
   - component: {fileID: 7885091187935007438}
   - component: {fileID: 1307989180565528356}
   - component: {fileID: 5442342871130457629}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wing Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +386,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ffc8a92af8dab40e2a35b76c369d2b7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -366,7 +443,7 @@ GameObject:
   - component: {fileID: 4485417258103022614}
   - component: {fileID: 6373962213548577817}
   - component: {fileID: 833434586909827751}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wing Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +493,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ffc8a92af8dab40e2a35b76c369d2b7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

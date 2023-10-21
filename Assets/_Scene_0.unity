@@ -377,6 +377,7 @@ MonoBehaviour:
   - {fileID: 1700942416061258, guid: 3f6055558a488314cb38691d88c41fdf, type: 3}
   - {fileID: 1539775467464788, guid: 06677ec088bca734db80dc6ecea1d7af, type: 3}
   - {fileID: 1539775467464788, guid: 06677ec088bca734db80dc6ecea1d7af, type: 3}
+  - {fileID: 2266179975775239139, guid: b40b4a71547ec4d528862274e23ee575, type: 3}
   enemySpawnPerSecond: 0.7
   enemyDefaultPadding: 1.5
   weaponDefinitions:
